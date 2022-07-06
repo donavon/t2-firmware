@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - usb > node-pre-gyp > tar-pack > fstream-ignore > minimatch:
+        patched: '2022-07-06T10:55:55.121Z'
+  'npm:tar:20151103':
+    - usb > node-pre-gyp > tar:
+        patched: '2022-07-06T10:55:55.121Z'
+    - usb > node-pre-gyp > tar-pack > tar:
+        patched: '2022-07-06T10:55:55.121Z'
